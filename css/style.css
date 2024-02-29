@@ -8,7 +8,7 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
     ---background-color: #EED9D4;
-    ---headings: #648296;
+    ---headings: #42a37c;
     ---text: #7F9DB7;
 
     ---border-color: #9FBDB1;
@@ -45,10 +45,13 @@ body{
 
 .expo-exclusive h1{
     font-weight: 500;
+    color: var(---headings);
 }
 
 .expo-exclusive h2{
     font-weight: 400;
+    color: var(---headings);
+
 }
 
 .expo-exclusive a{
@@ -167,7 +170,7 @@ body{
 }
 
 .form h1{
-    color: var(---border-color);
+    color: var(---headings );
 }
 
 .form{
@@ -243,6 +246,43 @@ body{
 
     .formContainer div:nth-child(1){
         display: none;
+    }
+
+    .grid-img{
+        display: none;
+    }
+
+    .expo-exclusive-card div{
+        padding: 0 3rem;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    }
+
+    .expo-exclusive-card div:nth-child(2) {
+        padding: 0 !important;
+        min-height: 50rem;
+    }
+
+    .expo-exclusive h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 8rem;
+        /* width: 100%; */
+    }
+    
+    .expo-exclusive h2{
+        font-size: 1.2rem;
+        font-weight: 500;
+
+        margin-bottom: 3rem;
+    }
+
+    .exclusive-offer-cta{
+    
+        width: 81dvw;
+        text-align: center;
     }
 }
 
