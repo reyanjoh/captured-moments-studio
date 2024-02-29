@@ -13,8 +13,16 @@
 
     ---border-color: #9FBDB1;
     ---border-color-strong: #244b3b;
+    ---border-color-strong-hover: #2d5f4a;
+
 
     ---font: "Bodoni Moda", serif
+}
+
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -30,9 +38,86 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 40dvh;
+    flex-direction: column;
+    padding: 0 30dvh;
     font-family: var(---font);
 }
+
+.expo-exclusive h1{
+    font-weight: 500;
+}
+
+.expo-exclusive h2{
+    font-weight: 400;
+}
+
+.expo-exclusive a{
+    text-decoration: none;
+    color: var(---border-color);
+}
+
+.expo-exclusive-card{
+    border: 2px solid var(---border-color);
+
+}
+
+
+.expo-exclusive-card div{
+    width: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.expo-exclusive-card div:nth-child(2){
+    padding: 2rem 3rem 0 2rem;
+}
+
+.exclusive-offer-cta{
+    
+    background-color: var(---border-color-strong);
+    color: white !important;
+    text-decoration: none;
+    padding: .5rem 2rem;
+    transition: .1s;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.exclusive-offer-cta:hover{
+    background-color: var(---border-color-strong-hover);
+    
+}
+
+
+
+.grid-img img{
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .formContainer{
@@ -116,7 +201,7 @@ body{
 }
 
 .submit{
-    background-color: var(---border-color) !important;
+    background-color: var(---border-color-strong) !important;
     color: white;
     font-size: 1.1rem;
     height: 2.5rem;
@@ -133,6 +218,16 @@ body{
     font-weight: 500;
     font-size: 1.5rem;
 }
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width:767px) {
 
