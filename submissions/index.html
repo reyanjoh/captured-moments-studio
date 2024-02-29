@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <script type="text/javascript">
+        var submited = false
+    </script>
+
     <main class="main">
+
+        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submited){
+            window.location='/submissions/thank-you'
+        }" frameborder="0"></iframe>
         <div class="formContainer">
             <div>
                 <div class="imgContainer">
@@ -18,7 +26,7 @@
             </div>
             <div>
               
-                <form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLSeVhWC_ty1R3_6n0-7Y3CeaHOS9FrUugSeX8dCep7O1yrW19A/formResponse" method="post" >
+                <form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLSeVhWC_ty1R3_6n0-7Y3CeaHOS9FrUugSeX8dCep7O1yrW19A/formResponse" method="post" target="hiddenConfirm" onsubmit="submited=true">
                     <h1>Kasadya Expo <br>Submissions</h1> 
                   <label htmlFor="entry.1926715850">Email:</label>
                   <input placeholder="Email" required type="e-mail" id="entry.1926715850" name="entry.1926715850" />

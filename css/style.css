@@ -128,6 +128,12 @@ body{
 
 }
 
+.thank-you-h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
 @media only screen and (max-width:767px) {
 
     .main{
